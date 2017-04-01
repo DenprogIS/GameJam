@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="Box.cs" />
+    <Compile Include="Coordinates.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
@@ -56,6 +59,7 @@
     <Compile Include="IUnit.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="LevelGenerator.cs" />
+    <Compile Include="Physics.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

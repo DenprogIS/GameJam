@@ -1,29 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace GameJam
 {
     class Player : IUnit
     {
-        public Vector Location { get; set; }
+        public Box Box { get; }
 
         public Player(Vector startLocation)
         {
-            Location = startLocation;
+            Box = new Box(startLocation, GetSprite().Size);
+        }
+
+        public Action Act()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DeadInConflict(IUnit other)
+        {
+            throw new NotImplementedException();
         }
 
         public Image GetSprite()
         {
-            return Image.FromFile("Resources/sprite.png"); ;
-        }
-
-        public void Act()
-        {
-            throw new NotImplementedException();
+            return Image.FromFile("Resources/sprite.png"); 
         }
     }
 }

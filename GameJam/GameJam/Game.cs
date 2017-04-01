@@ -33,7 +33,10 @@ namespace GameJam
 
         private void GameTick(object sender, System.EventArgs e)
         {
-            gameForm.DrawTo(currentLevel); 
+            currentLevel.Physics.Move(currentLevel.Units);
+            gameForm.DrawTo(currentLevel);
+            currentLevel.Physics.Kill();
+            gameForm.DrawTo(currentLevel);
         }
     }
 }

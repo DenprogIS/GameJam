@@ -2,8 +2,8 @@
 {   
     public class Vector
     {
-        public double X { get; set; }
-        public double Y { get; set; }
+        public readonly double X;
+        public readonly double Y;
 
         public Vector(double x, double y)
         {

@@ -8,10 +8,12 @@ namespace GameJam
     public partial class GameForm : Form
     {
         public Keys KeyPressed { get; private set; }
+        public static Size FormSize { get; private set; }
 
         public GameForm()
         {
             InitializeComponent();
+            FormSize = Size;
 
             KeyDown += GameForm_KeyDown;
             KeyUp += GameForm_KeyUp;
@@ -46,7 +48,7 @@ namespace GameJam
             {
                 g.Transform = matrix;
                 var sprite = unit.GetSprite();
-                g.TranslateTransform((float)unit.Location.X, (float)unit.Location.Y);
+                g.TranslateTransform((float)unit.Box.Coordinates.LeftTop.X, (float)unit.Box.Coordinates.LeftTop.Y);
                 g.DrawImage(sprite, new Point(-sprite.Width / 2, -sprite.Height / 2));
             }
             screen.Image = image;
