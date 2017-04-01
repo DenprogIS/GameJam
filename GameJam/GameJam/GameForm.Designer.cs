@@ -37,17 +37,17 @@
             this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screen.Location = new System.Drawing.Point(0, 0);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(284, 261);
+            this.screen.Size = new System.Drawing.Size(642, 499);
             this.screen.TabIndex = 0;
             this.screen.TabStop = false;
             // 
-            // Form1
+            // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(642, 499);
             this.Controls.Add(this.screen);
-            this.Name = "Form1";
+            this.Name = "GameForm";
             this.Text = "Game";
             ((System.ComponentModel.ISupportInitialize)(this.screen)).EndInit();
             this.ResumeLayout(false);

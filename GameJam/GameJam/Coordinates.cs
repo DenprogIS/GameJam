@@ -61,7 +61,7 @@ namespace GameJam
 
         public Coordinates(Vector location, Size size)
         {
-            leftTop = new Vector(location.X, location.Y);
+            LeftTop = new Vector(location.X, location.Y);
             Size = size;
         }
     }

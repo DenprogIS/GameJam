@@ -35,8 +35,8 @@ namespace GameJam
         {
             currentLevel.Physics.Move(currentLevel.Units);
             gameForm.DrawTo(currentLevel);
-            currentLevel.Physics.Kill();
-            gameForm.DrawTo(currentLevel);
+            //currentLevel.Physics.Kill();
+            //gameForm.DrawTo(currentLevel);
         }
     }
 }

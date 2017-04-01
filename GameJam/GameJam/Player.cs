@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 namespace GameJam
 {
@@ -9,12 +8,12 @@ namespace GameJam
 
         public Player(Vector startLocation)
         {
-            Box = new Box(startLocation, GetSprite().Size);
+            Box = new Box(startLocation, GetSprite().Size, maxHorizontalVelocity:1);
         }
 
         public Action Act()
         {
-            throw new NotImplementedException();
+            return Action.GoRight;
         }
 
         public bool DeadInConflict(IUnit other)
